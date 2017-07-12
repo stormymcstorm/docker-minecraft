@@ -8,7 +8,7 @@ FROM java
 MAINTAINER stormymcstorm
 
 ################## ENVIORMENT ######################
-ENV MINECRAFT_V 1.11.2
+ENV MINECRAFT_V 1.12
 ENV MINECRAFT_MEM 1024M
 ENV MINECRAFT_SERVER_LOCATION /data
 ENV MINECRAFT_SERVER_FILE minecraft_server.jar
