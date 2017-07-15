@@ -7,8 +7,19 @@ $ docker pull stormymcstorm/minecraft-server
 ```
 
 ## Basic Usage
+Mac / Linux:
 ```bash
 $ docker run -itd --name mc-server -p 25565:25565 -v $(pwd)/server:/data stormymcstorm/minecraft-server
+```
+
+Windows (cmd):
+```cmd
+> docker run -itd --name mc-server -p 25565:25565 -v %cd%\server\:/data/ stormymcstorm/minecraft-server
+```
+
+Windows (powershell):
+```powershell
+> docker run -itd --name mc-server -p 25565:25565 -v $pwd\server\:/data/ stormymcstorm/minecraft-server
 ```
 
 This will create a new minecraft server container and expose the nessary ports for minecraft to run. It will also mount the data volume to the host's filesystem so that the server files will presist.
@@ -26,7 +37,7 @@ To controll the server yousimply need to attach to the container and start issui
 <br/>
 Usage:
 ```bash
-$ dockere attach mc-server
+$ docker attach mc-server
 ```
 
 ## License
