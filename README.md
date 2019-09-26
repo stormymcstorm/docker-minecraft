@@ -26,7 +26,7 @@ This will create a new minecraft server container and expose the nessary ports f
 
 ## Enviorment Variables
 - `MINECRAFT_MEM` - This envioment variable controlls the amount of memory the server is allowed to use. By default it is set to `1024M`
-<br/>
+
 Usage:
 ```bash
 $ docker run -itd --name mc-server -p 25565:25565 --env MINECRAFT_MEM=1024M stormymcstorm/minecraft-server
